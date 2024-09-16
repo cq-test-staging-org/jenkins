@@ -70,6 +70,7 @@ public final class BuildListenerAdapter implements BuildListener {
     }
 
     @Override public PrintWriter fatalError(String format, Object... args) {
+        System.out.println("Test");
         return delegate.fatalError(format, args);
     }
 
